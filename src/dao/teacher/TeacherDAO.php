@@ -96,7 +96,7 @@ class TeacherDAO implements TeacherInterface
   }
 
   public function addTeacher($teacher){
-    $sql = "insert into teacher (id, email, fullname, lastname, gender, birthdate, is_staff, password) values("
+    $sql = "insert into teacher (id, fullname, lastname, photo, gender, birthdate, contracttype) values("
       .$teacher->getId().", '"
       .$teacher->getFullName()."', '"
       .$teacher->getLastName()."', '"
@@ -108,6 +108,7 @@ class TeacherDAO implements TeacherInterface
       $this->database->query($sql); 
       return true;
     } catch (Exception $e) {
+      echo $e;
       return false;
     }
   }

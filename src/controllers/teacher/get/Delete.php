@@ -1,10 +1,12 @@
 <?php
+use Teacher\Teacher;
+use TeacherDAO\TeacherDAO;
+require_once('./src/dao/teacher/TeacherDAO.php');
+require_once('./src/models/teacher/Teacher.php');
 
 if ((isset($delete_id) and $delete_id != '')){
-    require_once('./src/models/dbservices.php');
-    $service = new Service();
-    $service->deleteTeacher($delete_id);
-    $datos = $service->getService();
+    $teacherDAO = new TeacherDAO();
+    $teacherDAO->deleteTeacher($delete_id);
     header("Location: /teacher/list");
 }
 

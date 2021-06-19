@@ -18,31 +18,33 @@ Route::add('/login', function () {
 
 // Post route example
 Route::add('/teacher/list', function () {
-    require_once('./src/controllers/teacher/List.php');
+    require_once('./src/controllers/teacher/get/List.php');
 }, 'get');
 Route::add('/teacher/list', function () {
-    require_once('./src/controllers/teacher/List.php');
+    require_once('./src/controllers/teacher/get/List.php');
 }, 'post');
 
 Route::add('/teacher/edit/([0-9]*)', function ($tea_id) {
-    require_once('./src/controllers/teacher/Edit.php');
+    require_once('./src/controllers/teacher/get/Update.php');
 }, 'get');
 Route::add('/teacher/update/([0-9]*)', function ($tea_id) {
-    require_once('./src/controllers/teacher/Update.php');
+    require_once('./src/controllers/teacher/post/Update.php');
 }, 'post');
 
 
 
 Route::add('/teacher/delete/([0-9]*)', function ($delete_id) {
-    require_once('./src/controllers/teacher/Delete.php');
+    require_once('./src/controllers/teacher/get/Delete.php');
 }, 'get');
-
-
+/*Route::add('/teacher/delete/([0-9]*)', function ($delete_id) {
+    require_once('./src/controllers/teacher/post/Delete.php');
+}, 'post');
+ */
 Route::add('/teacher/add', function () {
-    require_once('./src/controllers/teacher/Add.php');
+    require_once('./src/controllers/teacher/get/Add.php');
 }, 'get');
-Route::add('/teacher/add', function () {
-    require_once('./src/controllers/teacher/Add.php');
+Route::add('/teacher/addvalidate', function () {
+    require_once('./src/controllers/teacher/post/Add.php');
 }, 'post');
 
 

@@ -28,7 +28,7 @@ include "./public/templates/utils.php";
           foreach ($genders as $gender) {
           ?>
             <?php if ($teacher->getGender() == $gender->getId()) { ?>
-              <option selected value="<?php echo $gender->getId() ?>"><?php echo $gender->getName() ?></option>
+                <option selected value="<?php echo $gender->getId() ?>"><?php echo $gender->getName() ?></option>
             <?php
             } else {
             ?>

@@ -49,7 +49,7 @@ include "./public/templates/utils.php";
                 Edit <i class="far fa-edit"></i></a>
             </td>
             <td><a class="btn btn-outline-danger" 
-            href="/teacher/delete/<?php echo $value['tea_cod'] ?>">Delete
+            href="/teacher/delete/<?php echo $teacher->getId() ?>">Delete
             <i class="far fa-trash-alt"></i></a></td>
           </tr>
         <?php
