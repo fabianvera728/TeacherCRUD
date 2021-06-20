@@ -3,7 +3,7 @@
 
   function head($newTitle) {
     $title = $newTitle;
-    require_once("head.php");
+    require_once("Head.php");
   }
 
 ?>

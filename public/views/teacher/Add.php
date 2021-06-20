@@ -1,12 +1,12 @@
 <?php
-include "./public/templates/utils.php";
+include "./public/templates/Utils.php";
 ?>
 <html lang="es">
-<?php echo head("Add teacher"); ?>
+<?php head("Add new teacher"); ?>
 
 <body>
 
-  <form class="container form-control" action="/teacher/addvalidate" method="post">
+  <form class="container form-control" action="/teacher/add" method="post">
     <h1>Add teacher</h1>
 <div class="mb-3">
       <label for="name" class="form-label">Nit</label>

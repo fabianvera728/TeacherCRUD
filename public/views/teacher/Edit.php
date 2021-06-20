@@ -1,8 +1,8 @@
 <?php
-include "./public/templates/utils.php";
+include "./public/templates/Utils.php";
 ?>
 <html lang="es">
-<?php echo head("Edit teacher"); ?>
+<?php head("Edit teacher"); ?>
 
 <body>
   <div class="container">
