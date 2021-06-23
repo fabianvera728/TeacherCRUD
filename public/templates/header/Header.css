@@ -1,0 +1,108 @@
+.Header {
+  min-height: 4.5rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  margin-bottom: 1rem;
+}
+
+.Header__brand {
+  max-width: 9rem;
+  width: 100%;
+  color: var(--black);
+  margin-left: 3rem;
+}
+
+.Header__nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  padding-right: 3rem;
+  overflow: hidden;
+  position: relative;
+  background: var(--white);
+}
+
+.Header__nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.Header__push-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Header__hamburger {
+  display: none;
+  padding-right: 3rem;
+}
+
+.pr-2 {
+  padding-right: 3rem;
+}
+
+.Header__burger-icon {
+  font-size: 2rem;
+  color: var(--gray-160)
+}
+
+.Header__burger-icon:hover {
+  transition: all 0.2s;
+  color: var(--pink);
+}
+
+.Header__visible {
+  display: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+  .Header {
+    padding-top: 2.3rem;
+    padding-bottom: 1rem;
+    align-items: flex-start;
+    z-index:9999;
+  }
+
+  .Header__visible {
+    display: none;
+  }
+
+  .Header__nav ul, .Header__nav a, .Header__nav div {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Header__nav {
+    position: fixed;
+    margin-top: 2.9rem;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  li > a, a.btn {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+  }
+
+  .Header__nav > div, .Header__nav > nav {
+    margin-bottom: 0.8rem;
+  }
+
+  .Header__hamburger {
+    transition: all 0.2s linear;
+    display: block;
+    cursor: pointer;
+  }
+
+  .pr-2 {
+    padding: 0;
+  }
+}
+

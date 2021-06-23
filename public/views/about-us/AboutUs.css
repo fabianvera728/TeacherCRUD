@@ -1,0 +1,89 @@
+.About {
+  width: 100vw;
+  padding: 3rem 0 0 0;
+}
+
+.About__grid {
+  display: grid;
+  gap: 3rem 0;
+  grid-auto-flow: dense;
+  grid-auto-columns: auto;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+}
+
+.About__full-width {
+  grid-column: span 2;
+}
+
+.About__bg-gray {
+  background-color: var(--gray);
+  padding: 2rem 0;
+  align-items: center;
+}
+
+img {
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+}
+
+.pl {
+  padding-left: 15rem;
+}
+
+.pr {
+  padding-right: 15rem;
+}
+
+.pl-1 {
+  padding-right: 1rem;
+}
+
+section.About__bg-gray.pr {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pl {
+    padding-left: 6rem;
+  }
+
+  .pr {
+    padding-right: 6rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .pl {
+    padding-left: 3rem;
+  }
+
+  .pr {
+    padding-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .About {
+    padding-top: 1rem;
+  }
+
+  .About__grid {
+    gap: 0;
+  }
+
+  .About__grid section {
+    grid-column: span 2;
+    padding: 0 2rem 2rem;
+  }
+
+  section .About__bg-gray {
+    padding-bottom: 0;
+  }
+}

@@ -2,7 +2,7 @@
 include "./public/templates/Utils.php";
 ?>
 <html lang="es">
-<?php head("Edit teacher"); ?>
+<?php head("Edit teacher", "/public/views/teacher/edit/Edit.css"); ?>
 
 <body>
   <div class="container">

@@ -13,7 +13,7 @@ $contracttypes = $contract->getContractTypes();
 $genderDAO = new GenderDAO();
 $genders = $genderDAO->getGenders();
   
-require_once('./public/views/teacher/Edit.php');
+require_once('./public/views/teacher/edit/Edit.php');
 
 
 

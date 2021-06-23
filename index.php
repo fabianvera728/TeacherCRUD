@@ -14,10 +14,10 @@ Router::add('/home', function () {
 }, 'get');
 
 Router::add('/login', function () {
-   require_once('./src/controllers/auth/Login.php');
+   require_once('./src/controllers/auth/post/Login.php');
 }, 'get');
 Router::add('/login', function () {
-   require_once('./src/controllers/auth/Login.php');
+   require_once('./src/controllers/auth/post/Login.php');
 }, 'post');
 
 Router::add('/about-us', function () {

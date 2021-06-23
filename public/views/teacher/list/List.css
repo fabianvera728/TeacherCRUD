@@ -1,0 +1,37 @@
+.List {
+  padding-top: 2rem;
+}
+
+.List__search-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.List__search-wrapper input {
+  max-width: 50rem;
+  margin-right: 1rem;
+}
+
+.List__options-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.List__table-wrapper {
+
+}
+blockquote {
+  text-align: center;
+}
+
+.px {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+

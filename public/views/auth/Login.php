@@ -2,7 +2,7 @@
 include "./public/templates/Utils.php";
 ?>
 <html lang="es">
-<?php head("Sing in"); ?>
+<?php head("Sing in", "/public/views/auth/Login.css"); ?>
 <body>
 <div>
     <div class="container">

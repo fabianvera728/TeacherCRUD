@@ -11,7 +11,7 @@ $teacherDAO = new TeacherDAO();
 $teachers = $teacherDAO->getTeachers();
 $contracttype = new ContractTypeDAO();
 $gender = new GenderDAO();
-require_once('./public/views/teacher/List.php');
+require_once('./public/views/teacher/list/List.php');
 
 /*
 if ((isset($_POST['id'])) && ($_POST['id'] != '') ) {

@@ -1,9 +1,8 @@
 <?php
-  $title = "Home";
 
-  function head($newTitle) {
-    $title = $newTitle;
-    require_once("Head.php");
-  }
+function head($title, $pathCSS)
+{
+   require_once("Head.php");
+}
 
 ?>
