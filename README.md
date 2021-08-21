@@ -11,6 +11,40 @@
 CREACH is a CRUD page that allows you to manage a repository of the teachers.
 
 ## 📷 Screenshots
+### 🦀 Home
+<div align="center">
+  <img src="https://github.com/fabianvera728/TeacherCRUD/blob/main/public/creach%20screenshots/home.png" width="1000"/>
+</div>
+
+### 🐟 About us
+<div align="center">
+  <img src="https://github.com/fabianvera728/TeacherCRUD/blob/main/public/creach%20screenshots/about_us.png" width="1000"/>
+</div>
+
+### 🐞 Teacher list
+<div align="center">
+    <img src="https://github.com/fabianvera728/TeacherCRUD/blob/main/public/creach%20screenshots/teacher_list.png" width="1000"/>
+</div>
+
+### 🦑 Teacher edit
+<div align="center">
+    <img src="https://github.com/fabianvera728/TeacherCRUD/blob/main/public/creach%20screenshots/teacher_edit.png" width="1000"/>
+</div>
+
+### 🦎 Teacher add
+<div align="center">
+    <img src="https://github.com/fabianvera728/TeacherCRUD/blob/main/public/creach%20screenshots/teacher%20add.png" width="1000"/>
+</div>
+
+### 🐬 Login
+<div align="center">
+    <img src="https://github.com/fabianvera728/TeacherCRUD/blob/main/public/creach%20screenshots/login.png" width="1000"/>
+</div>
+
+### 🐍 Singup
+<div align="center">
+    <img src="https://github.com/fabianvera728/TeacherCRUD/blob/main/public/creach%20screenshots/singup.png" width="1000"/>
+</div>
 
 ## 👾 To get started
 
