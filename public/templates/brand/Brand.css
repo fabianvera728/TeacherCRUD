@@ -8,4 +8,5 @@
   -ms-transform: scale(1.07); /* IE 9 */
   -o-transform: scale(1.07); /* Opera */
   transform: scale(1.07);
+  overflow: visible;
 }

@@ -5,10 +5,12 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  position: sticky;
+  position: fixed;
+  z-index:9999;
   top: 0;
   background: var(--white);
   margin-bottom: 1rem;
+  border-bottom: 2px solid var(--gray);
 }
 
 .Header__brand {
@@ -16,6 +18,7 @@
   width: 100%;
   color: var(--black);
   margin-left: 3rem;
+  margin-right: 1rem;
 }
 
 .Header__nav {
@@ -23,8 +26,7 @@
   align-items: center;
   width: 100vw;
   padding-right: 3rem;
-  overflow: hidden;
-  position: relative;
+  position: sticky;
   background: var(--white);
 }
 
@@ -48,7 +50,7 @@
 }
 
 .Header__burger-icon {
-  font-size: 2rem;
+  font-size: 30px !important;
   color: var(--gray-160)
 }
 
@@ -66,7 +68,7 @@
     padding-top: 2.3rem;
     padding-bottom: 1rem;
     align-items: flex-start;
-    z-index:9999;
+
   }
 
   .Header__visible {

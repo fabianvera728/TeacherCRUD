@@ -46,7 +46,9 @@ include "./public/templates/Utils.php";
         Working to make your job easier.
       </p>
       <div>
-        <a class="btn btn-primary" href="/teacher/list">List of teachers</a>
+        <?php if(isset($_SESSION['user_id'])){?>
+          <a class="btn btn-primary" href="/teacher/list">List of teachers</a>
+<?php }?>
       </div>
     </section>
   </div>

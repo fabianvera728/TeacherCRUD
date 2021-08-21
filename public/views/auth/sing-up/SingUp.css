@@ -1,17 +1,17 @@
-.Edit {
+.SingUp {
   padding-top: 6rem;
 }
 
-.Edit__grid {
+.SingUp__grid {
   display: grid;
   gap: 1rem 2rem;
 }
 
-.Edit__grid-full-width {
+.SingUp__grid-full-width {
   grid-column: span 2;
 }
 
-.Edit__flex {
+.SingUp__flex {
   background-color: var(--gray);
   padding: 3rem 0;
   margin-top: 3rem;
@@ -20,14 +20,14 @@
   justify-content: center;
 }
 
-.Edit__options-wrapper {
+.SingUp__options-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0;
 }
 
-.Edit__full-width {
+.SingUp__full-width {
   width: 100%;
 }
 
@@ -67,7 +67,7 @@ label > svg {
 }
 
 @media only screen and (max-width: 600px) {
-  .Edit__grid div {
+  .SingUp__grid div {
     grid-column: span 2;
   }
 
@@ -75,4 +75,5 @@ label > svg {
     padding: 0 3rem;
   }
 }
+
 

@@ -5,7 +5,7 @@ include "./public/templates/Utils.php";
 <?php head("Not found", "/public/views/not-found/NotFound.css"); ?>
 
 <body>
-<div>
+<div class="NotFound">
     <?php echo "Not found \"" . $path . "\"" ?>
 </div>
 </body>

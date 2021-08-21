@@ -1,8 +1,6 @@
 create database teacher_Crud;
 use teacher_Crud;
 
-SHOW CREATE TABLE teacher;
-
 drop table if exists gender cascade;
 create table gender
 (
@@ -83,3 +81,5 @@ insert into user (id, email, fullname, lastname, gender, birthdate, is_staff, pa
     value (1, 'pepito@gmail.com', 'Pepito', 'Perez', 3, '2000-11-3', false, 'pepitoperez'),
     (2, 'juanitodiaz@gmail.com', 'Pepito', 'Perez', 3, '2000-11-3', false, 'pepitoperez'),
     (3, 'amdin@gmail.com', 'Pepito', 'Perez', 3, '2000-11-3', true, 'admin');
+
+select * from teacher;

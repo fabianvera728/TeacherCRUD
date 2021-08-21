@@ -11,7 +11,7 @@ class ConnectionDB {
   public function __construct(){
     try {
       //code...
-      $this->database = new PDO('mysql:host=localhost;port=3306;dbname=teacher_crud','root','12345');
+      $this->database = new PDO('mysql:host=localhost;port=3306;dbname=teacher_Crud','root','fhvera2020');
       $this->setNames();
     } catch (\Exception $th) {
       echo 'error '.$th;

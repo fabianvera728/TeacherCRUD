@@ -10,6 +10,9 @@
   --btn-border: #ef5f63;
 
   --link: #a0a0a0;
+  --gray-61: #3d3d3d;
+  --gray-160: #a0a0a0;
+  --gray-220: #dcdcdc;
 }
 
 html {
@@ -20,11 +23,7 @@ html {
   Segoe UI Emoji, Segoe UI Symbol,
   Noto Color Emoji;
 
-  line-height: 1.5
-}
-
-body {
-  height: 100vh;
+  line-height: 1.5 !important;
 }
 
 button, input {
@@ -49,7 +48,6 @@ button, input {
   display: inline-block;
   --text-opacity: 1;
   color: var(--btn-color);
-  font-size: 1.1rem;
   --border-opacity: 1;
   border-color: var(--btn-border);
   border-width: 2px;
@@ -57,6 +55,7 @@ button, input {
   padding: .52rem 1.52rem;
   border-radius: 9999px;
   flex-shrink: 0;
+  cursor:pointer;
 }
 
 .btn:hover {
@@ -74,7 +73,10 @@ button, input {
   --btn-color: #b3b3b3;
   --btn-border: #b3b3b3;
 }
-
+.btn-danger {
+  --btn-color: #af0a0a;
+  --btn-border: #af0a0a;
+}
 .link {
   position: relative;
 }
@@ -94,8 +96,56 @@ button, input {
   font-weight: bolder;
 }
 
+.tag {
+  background: #cccccc;
+  border-radius: 3rem;
+  font-size: 0.8rem;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tag-teal {
+  background-color: #47bcd4;
+}
+
+.tag-purple {
+  background-color: #5e76bf;
+}
+
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.tag-green {
+  background-color: #5bcd74;
+}
+
+.tag-yellow {
+  background-color: #cdb45b;
+}
+
+.input-file {
+  opacity: 0;
+  width: 0.1px !important;
+  height: 0.1px;
+  position: absolute;
+  display:flex;
+  justify-content: center;
+}
+
+.input-file-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+}
+
 /*Labels*/
-.form__label {
+.form-label {
   display: block;
   width: 100%;
   font-weight: 600;
@@ -103,7 +153,7 @@ button, input {
   position: relative
 }
 
-.form__label--required:after {
+.form-label-required:after {
   content: "*";
   margin-left: .25rem;
   --text-opacity: 1;
@@ -114,7 +164,7 @@ button, input {
 /*End of labels*/
 
 /* Inputs */
-.form__field {
+.form-field {
   --text-opacity: 1;
   color: #696969;
   color: rgba(105, 105, 105, var(--text-opacity));
@@ -139,13 +189,13 @@ button, input {
   line-height: 1.25;
 }
 
-.form__field:hover {
+.form-field:hover {
   --border-opacity: 1;
   border-color: #afafaf;
   border-color: rgba(175, 175, 175, var(--border-opacity))
 }
 
-.form__field:focus {
+.form-field:focus {
   --border-opacity: 1;
   border-color: #ef5f63;
   border-color: rgba(239, 95, 99, var(--border-opacity));
@@ -153,32 +203,36 @@ button, input {
   box-shadow: 0 0 0 3px rgba(239, 95, 99, .2)
 }
 
-.form__field::-moz-placeholder {
+.form-field::-moz-placeholder {
   --text-opacity: 1;
   color: #afafaf;
   color: rgba(175, 175, 175, var(--text-opacity));
   opacity: 1
 }
 
-.form__field:-ms-input-placeholder {
+.form-field:-ms-input-placeholder {
   --text-opacity: 1;
   color: #afafaf;
   color: rgba(175, 175, 175, var(--text-opacity));
   opacity: 1;
 }
 
-.form__field::placeholder {
+.form-field::placeholder {
   --text-opacity: 1;
   color: #afafaf;
   color: rgba(175, 175, 175, var(--text-opacity));
   opacity: 1;
 }
 
-.form__field-container {
-  position: relative;
+.form-field-container {
+  padding-top: 0.7rem;
 }
 
-.form__field-container--select:after {
+.form-field-container-select {
+  position:relative;
+}
+
+.form-field-container-select:after {
   position: absolute;
   margin-right: .75rem;
   --border-opacity: 1;
@@ -186,11 +240,12 @@ button, input {
   border-color: rgba(105, 105, 105, var(--border-opacity));
   border-bottom-width: 2px;
   border-left-width: 2px;
+  font-size: 1.2rem;
   right: 0;
   width: .5rem;
   height: .5rem;
   pointer-events: none;
-  top: 50%;
+  top: 73%;
   content: "";
   transform: rotate(-45deg) translateY(calc(-50% - .3125rem));
 }
@@ -207,7 +262,7 @@ button, input {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  body, p, strong {
+  body, a, p, strong {
     font-size: 14px !important;
   }
 
@@ -226,20 +281,20 @@ button, input {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  body, p, strong {
-    font-size: 15px !important;
+  body, a, p, strong {
+    font-size: 16px !important;
   }
 
   .text-bold-1 {
-    font-size: 32px !important;
-  }
-
-  .text-bold-2 {
     font-size: 28px !important;
   }
 
+  .text-bold-2 {
+    font-size: 22px !important;
+  }
+
   .text-bold-3 {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 }
 

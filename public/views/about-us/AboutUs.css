@@ -1,15 +1,12 @@
 .About {
-  width: 100vw;
-  padding: 3rem 0 0 0;
+  width: 100%;
+  padding: 8rem 0 0 0;
 }
 
 .About__grid {
   display: grid;
   gap: 3rem 0;
-  grid-auto-flow: dense;
-  grid-auto-columns: auto;
   grid-template-columns: 1fr 1fr;
-  justify-items: stretch;
 }
 
 .About__full-width {
@@ -23,8 +20,7 @@
 }
 
 img {
-  object-fit: contain;
-  overflow: hidden;
+  object-fit: scale-down;
   width: 100%;
 }
 
@@ -40,14 +36,7 @@ img {
   padding-right: 1rem;
 }
 
-section.About__bg-gray.pr {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
+
 
 @media only screen and (max-width: 1200px) {
   .pl {

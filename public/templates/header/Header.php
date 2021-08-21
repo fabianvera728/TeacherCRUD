@@ -8,16 +8,23 @@
     </a>
   </div>
   <div class="Header__nav Header__visible">
-    <nav class="Header__push-center">
+  <nav class="Header__push-center">
       <ul>
         <li class="pr-2"><a class="link" href="/home">Home</a></li>
+<?php if(isset($_SESSION['user_id'])){?>
         <li class="pr-2"><a class="link" href="/teacher/list">Teachers</a></li>
+<?php }?>
         <li><a class="link" href="/about-us">About us</a></li>
       </ul>
     </nav>
     <div class="">
-      <a class="btn btn-secondary" href="/login">Sing up</a>
+<?php if(!isset($_SESSION['user_id'])){?>
+      <a class="btn btn-secondary" href="/sing-up">Sing up</a>
       <a class="btn btn-primary" href="/login">Log in</a>
+<?php }else{?>
+<a class="btn btn-secondary" href="/home"><?php echo $_SESSION['user_id'] ?></a>
+      <a class="btn btn-primary" href="/logout">Logout</a>
+<?php } ?>
     </div>
   </div>
   <div>

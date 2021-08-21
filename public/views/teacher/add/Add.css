@@ -1,0 +1,79 @@
+.Add {
+  padding-top: 6rem;
+}
+
+.Add__grid {
+  display: grid;
+  gap: 1rem 2rem;
+}
+
+.Add__grid-full-width {
+  grid-column: span 2;
+}
+
+.Add__flex {
+  background-color: var(--gray);
+  padding: 3rem 0;
+  margin-top: 3rem;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Add__options-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.Add__full-width {
+  width: 100%;
+}
+
+label > svg {
+  margin-right: 0.3rem;
+}
+
+.form-field {
+  max-width: 50rem;
+}
+
+.px {
+  padding: 0 14rem;
+}
+
+.py {
+  padding: 1.2rem 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .px {
+    padding: 0 16rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .px {
+    padding: 0 9rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .px {
+    padding: 0 6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Add__grid div {
+    grid-column: span 2;
+  }
+
+  .px {
+    padding: 0 3rem;
+  }
+}
+
+

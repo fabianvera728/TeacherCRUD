@@ -1,0 +1,86 @@
+.Login {
+  padding-top: 6rem;
+}
+
+.Login__brand {
+  position: relative;
+  margin: auto;
+  padding: 1rem 0 2rem;
+  max-width: 9rem;
+  width: 100%;
+  color: var(--black);
+}
+
+.Login__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.Login__card {
+  padding: 2rem 2rem 0;
+  max-width: 40rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--gray);
+}
+
+.Login__card p {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.Login__card div.py {
+  display: flex;
+  justify-content: center;
+}
+
+.Login__center-link {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.Login__center-link span {
+  color: var(--gray-160);
+}
+
+.Login__center-link a {
+  color: var(--pink);
+  margin-left: 0.5rem;
+  font-size:inherit !important;
+}
+
+input[type="submit" i] {
+  background-color: var(--white);
+}
+
+.px {
+  padding: 0 16rem;
+}
+
+.py {
+  padding: 1.4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .px {
+    padding: 0 16rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .px {
+    padding: 0 9rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .px {
+    padding: 0 6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .px {
+    padding: 0 3rem;
+  }
+}

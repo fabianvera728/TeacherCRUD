@@ -10,10 +10,6 @@ require_once ('./src/interfaces/teacher/TeacherInterface.php');
 require_once ('./src/models/teacher/Teacher.php');
 require_once ('./src/services/ConectionDB.php');
 
-//use TeacherInterface\TeacherInterface;
-
-//use TeacherInterface;
-
 /**
  * Class TeacherDAO
  * @author fabian vera
@@ -48,6 +44,19 @@ class TeacherDAO implements TeacherInterface
     return $teachers;
   }
   
+  public function getTeachersByName($name){
+    $array = $this->getTeachers();
+    $name = strtolower($name);
+    $result = array();
+    foreach($array as $teacher){
+      if(str_contains(strtolower($teacher->getFullName()),$name) 
+          || str_contains(strtolower($teacher->getLastName()),$name)){
+        $result[] = $teacher;
+      }
+    }
+    return $result;
+  }
+
   public function getTeacher($id){
     $sql = "select * from teacher where id='".$id."'";
     $teachers = array();

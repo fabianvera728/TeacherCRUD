@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/public/templates/brand/Brand.css">
+ <link rel="stylesheet" href="/public/templates/brand/Brand.css">
 
 <div class="Brand">
   <svg class="transform" viewBox="38.423 58.861 495.527 107.908" xmlns="http://www.w3.org/2000/svg"
